@@ -17,8 +17,8 @@ def setup():
 	os.chdir("/opt/toriptables2")
 	os.system("sudo python toriptables2.py -l")
 	os.chdir("/opt/tor_ip_switcher")
-	sifre=int(input("Lütfen şifre giriniz?"))
-	os.system("sudo python tips_setup.py "+str(sifre))
+	password=int(input("Please enter password for tor: "))
+	os.system("sudo python tips_setup.py "+str(password))
 	os.system("clear")
 	os.system("sudo python tor_ip_switcher.py")	
 def iptables_ipswitcher():
