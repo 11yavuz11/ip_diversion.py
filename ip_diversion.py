@@ -14,6 +14,7 @@ def setup():
 	os.chdir("/opt/")
 	os.system("sudo apt-get install tor -y")
 	os.system("sudo service tor start")
+	os.system("apt install tor python-tk")
 	os.chdir("/opt/toriptables2")
 	os.system("sudo python toriptables2.py -l")
 	os.chdir("/opt/tor_ip_switcher")
